@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imgs/background-trechos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+
+
+.span img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c1c1c0;
+    align-items: center;
+    margin-top: -0.4vw;
+}
+
+.links {
+    width: 45vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.9vw;
+
+}
+.links a:hover{
+    color:rgb(86, 84, 84);
+}
+
+.logo-header img {
+    width: 3.8vw;
+    border-left: 0.3vw solid gray;
+    height: auto;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.trechos{
+    width: 54vw;
+    margin-top: 10.5vw;
+    overflow-y: scroll;
+    text-align: justify;
+    padding-right: 0.5vw;
+    height: 28vw;
+}
+
+.trechos h1{
+    font-size: 38px;
+}
+
+.trechos h2{
+    font-size: 28px;
+}
+
+.trechos p{
+    font-size: 23px;
+}
+
+/* .gold:hover{
+    animation-name: ouro ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.purple:hover{
+    animation-name: roxo ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes ouro{
+    0%{
+        color: black;
+        text-shadow: 0 0 12 gold,
+        0 0 50px gold,
+        0 0 100px gold;
+        
+    }
+    10%,90%{
+        color: gold;
+        text-shadow: none;
+    }
+}
+
+@keyframes roxo{
+    0%{
+        color: black;
+        text-shadow: 0 0 12 purple,
+        0 0 50px purple,
+        0 0 100px purple;
+        
+    }
+    10%,90%{
+        color: purple;
+        text-shadow: none;
+    }
+} */
+
+.purple:hover,
+.purple:hover ~ .purple {
+    animation-name: roxo ;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: initial;
+    text-rendering: auto;
+}
+
+.gold:hover,
+.gold:hover ~ .gold {
+    animation-name: dourado ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.blue:hover,
+.blue:hover ~ .blue {
+    animation-name: azul ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.green:hover,
+.green:hover ~ .green {
+    animation-name: verde ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes roxo {
+    0% {
+        color: black;
+        text-shadow: 0 0 12px purple purple, 0 0 100px purple;
+    }
+    10%, 90% {
+        color: purple;
+        text-shadow: none;
+    }
+}
+
+@keyframes dourado {
+    0% {
+        color: black;
+        text-shadow: 0 0 12px gold gold, 0 0 100px gold;
+    }
+    10%, 90% {
+        color: gold;
+        text-shadow: none;
+    }
+}
+
+@keyframes azul {
+    0% {
+        color: black;
+        text-shadow: 0 0 12px blue blue, 0 0 100px blue;
+    }
+    10%, 90% {
+        color: blue;
+        text-shadow: none;
+    }
+}
+
+@keyframes verde {
+    0% {
+        color: black;
+        text-shadow: 0 0 12px green green, 0 0 100px green;
+    }
+    10%, 90% {
+        color: green;
+        text-shadow: none;
+    }
+}

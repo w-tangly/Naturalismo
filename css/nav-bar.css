@@ -1,0 +1,49 @@
+.topnav {
+  display: none;
+}
+@media (max-width: 500px) {
+  .topnav {
+    display: block;
+    overflow: hidden;
+
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(184, 184, 184) 1c0;
+    color: black;
+  }
+
+  .active {
+    background-color: #c1c1c0;
+    color: #c1c1c0;
+    visibility: hidden;
+  }
+  .logo-header img {
+    width: 10vw;
+    border-left: 4px solid gray;
+    height: auto;
+  }
+  .links {
+    visibility: hidden;
+  }
+}

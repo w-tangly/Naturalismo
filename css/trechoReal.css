@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imgs/background-trechos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+
+
+.span img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c1c1c0;
+    align-items: center;
+    margin-top: -0.4vw;
+}
+
+.links {
+    width: 45vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.9vw;
+
+}
+.links a:hover{
+    color:rgb(86, 84, 84);
+}
+
+.logo-header img {
+    width: 3.8vw;
+    border-left: 0.3vw solid gray;
+    height: auto;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.trechos{
+    width: 54vw;
+    margin-top: 10.5vw;
+    overflow-y: scroll;
+    text-align: justify;
+    padding-right: 0.5vw;
+    height: 28vw;
+}
+
+.trechos h1{
+    font-size: 38px;
+}
+
+.trechos h2{
+    font-size: 28px;
+}
+
+.trechos p{
+    font-size: 23px;
+}
+
+.red:hover,
+.red:hover ~ .red {
+    animation-name: vermelho ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.seagreen:hover,
+.seagreen:hover ~ .seagreen {
+    animation-name: verdeoc ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.orange:hover,
+.orange:hover ~ .orange {
+    animation-name: laranja ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vermelho {
+    0% {
+        color: black;
+        text-shadow: 0 0 12px red red, 0 0 100px red;
+    }
+    10%, 90% {
+        color: red;
+        text-shadow: none;
+    }
+}
+@keyframes verdeoc {
+    0% {
+        color: black;
+        text-shadow: 0 0 12px seagreen seagreen, 0 0 100px seagreen;
+    }
+    10%, 90% {
+        color: seagreen;
+        text-shadow: none;
+    }
+}
+@keyframes laranja {
+    0% {
+        color: black;
+        text-shadow: 0 0 12px orange orange, 0 0 100px orange;
+    }
+    10%, 90% {
+        color: orange;
+        text-shadow: none;
+    }
+}

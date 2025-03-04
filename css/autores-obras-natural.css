@@ -1,0 +1,57 @@
+/* Container principal do carrossel */
+.slide-container {
+    position: relative;
+    width: 100%; /* Carrossel ocupa 100% da largura disponível */
+    max-width: 35vw; /* Ajuste o valor para o tamanho desejado */
+    margin: 0 auto; /* Centraliza o carrossel na tela */
+    overflow: hidden;
+    min-height: 45vh;
+    margin-right: 13vw;
+  }
+  
+  /* Container das imagens */
+  .image-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    max-height: 50vh;
+  }
+  
+  /* Estilizando as imagens do carrossel */
+  .slider-image {
+    width: 35vw;
+    height: 70%; /* Faz com que a imagem ocupe toda a altura do contêiner */
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço do contêiner, sem distorção */
+    object-position: center center; /* Centraliza a imagem dentro do contêiner */
+  }
+
+  .adolfo{
+    height: 80%;
+    object-fit: contain;
+  }
+
+  .julio{
+    height: 80%;
+    object-fit: contain;
+  }
+
+  /* Nome dos autores */
+  .image-caption {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  /* Animando o carrossel para rotação automática */
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+  }
+
+  /* Aplica a animação ao container de imagens */
+  .image-container {
+    animation: slide 20s infinite;
+  }

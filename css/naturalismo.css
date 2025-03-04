@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "VT323", Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../imgs/background-realismo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+.span img {
+  width: 100%;
+}
+
+header {
+  width: 100vw;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #c1c1c0;
+  align-items: center;
+  margin-top: -3px;
+}
+
+.links {
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.8vw;
+}
+
+.links a:hover {
+  color: rgb(86, 84, 84);
+}
+
+.logo-header img {
+  width: 3.8vw;
+  border-left: 4px solid gray;
+  height: auto;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftside {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8.25rem;
+}
+
+.leftside h1 {
+  font-size: 3.4vw;
+  padding-left: 24.5vw;
+  margin-bottom: 4.7vw;
+  width: 55vw;
+  margin-left: 4vw;
+}
+
+.leftside .caract {
+  width: 50.8vw;
+  margin-right: 9vw;
+}
+
+.leftside .carac {
+  margin-left: 11.5vw;
+  font-size: 2vw;
+  margin-bottom: 1.8vw;
+  text-align: justify;
+}
+b {
+  color: rgb(192, 83, 83);
+  font-weight: 600;
+}
+
+b:hover {
+  color: red;
+}
+
+h2 {
+  font-size: 2.5vw;
+}
+
+.li {
+  overflow-y: scroll;
+  margin-left: 15.8vw;
+  width: 33.7vw;
+  height: 23.3vh;
+  font-size: 1.5vw;
+}
+
+span {
+  font-weight: 600;
+}
+
+.rightside {
+  margin-right: 2vw;
+  margin-top: 12.5vw;
+  width: 47.5vw;
+  text-align: justify;
+  height: 49vh;
+  overflow-y: scroll;
+  padding: 0 1rem;
+  align-self: center;
+}
+
+.rightside h1 {
+  font-size: 4vw;
+}
+
+.rightside p {
+  font-size: 2vw;
+}
+
+.rightside li {
+  font-size: 1.5vw;
+  list-style: none;
+}
+
+.trechos {
+  margin-top: vw;
+}
+
+.trechos a {
+  font-size: 2vw;
+  color: blue;
+  margin-left: 2vw;
+}
+
+.trechos a:last-child {
+  margin-left: 15vw;
+}
