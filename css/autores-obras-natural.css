@@ -68,3 +68,21 @@
 .adolfo, .julio{
   height: 80%;
 }
+
+.containerTeste{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#titleAutor{
+  font-size: 2.6rem;
+  max-width: 60vw;
+}
+
+#txtContent{
+  font-size: 1.6rem;
+  max-width: 65vw;
+  margin-left: 6rem;
+}
