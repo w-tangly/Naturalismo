@@ -9,26 +9,27 @@
 
 body {
   width: 100vw;
-  height: auto;
   background-image: url(../imgs/background-autores.png);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
   background-position-y: -7.5vh;
+  position: fixed;
+  align-items: center;
 }
 
 .span img {
-  width: 100%;
+  width: 100vw;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   background-color: #c1c1c0;
   align-items: center;
-  margin-top: -0.4vw;
+  margin-top: -4px;
 }
 
 .links {
@@ -42,33 +43,29 @@ header {
   color: black;
   font-size: 2.9vw;
 }
+
 .links a:hover {
   color: rgb(86, 84, 84);
 }
 
-.logo-header img {
+/* .logo-header img {
   width: 3.8vw;
   border-left: 0.3vw solid gray;
   height: auto;
-}
+} */
 
 section {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-}
-
-.overflow{
-  justify-content: center;
-  overflow-y: scroll;
-  height: fit-content;
+  align-items: center;
 }
 
 .escola {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 11vh;
+  margin-top: 10vh;
   font-size: 42px;
 }
 
@@ -80,15 +77,17 @@ section {
 }
 
 .container {
+  width: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: space-around;
   margin-top: 6vh;
 }
 
-.leftside {
-  margin-left: 18vw;
-  text-align: center;
+.leftside, .rightside{
+  /* margin-left: 18vw; */
+  text-align: left;
+  min-width: 30vw;
 }
 
 .leftside h3 {

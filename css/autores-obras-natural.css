@@ -1,9 +1,9 @@
 .banner{
   margin: 0 24px;
 }
+
 .banner-area{
-  margin-right: 25rem;
-  width: fit-content;
+  width: inherit;
   aspect-ratio: 2.9;
   position: relative;
   display: flex;
@@ -11,12 +11,14 @@
   align-items: center;
   justify-content: center;
 }
+
 .banner-area a{
   display: none;
   left: 0;  
   right: 0;
   top: 0;
 }
+
 .banner-area a img{
   max-width: 35vw;
   max-height: 35vh;
@@ -74,6 +76,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 #titleAutor{
@@ -84,5 +87,12 @@
 #txtContent{
   font-size: 1.6rem;
   max-width: 65vw;
-  margin-left: 6rem;
+}
+
+.newSec{
+  height: fit-content;
+  max-height: 63vh;
+  overflow-y: scroll;
+  max-width: 65vw;
+  margin: .5rem 0 0 24rem;
 }
