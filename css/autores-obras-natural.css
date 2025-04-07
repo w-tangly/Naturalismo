@@ -79,12 +79,20 @@
   align-items: center;
 }
 
-#titleAutor{
+.containerTesteItem{
+  padding: 2rem;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.titleAutor, .titleObra{
   font-size: 2.6rem;
   max-width: 60vw;
 }
 
-#txtContent{
+.txtContent{
   font-size: 1.6rem;
   max-width: 65vw;
 }
@@ -95,4 +103,12 @@
   overflow-y: scroll;
   max-width: 65vw;
   margin: .5rem 0 0 24rem;
+}
+
+.containerTesteItem{
+  display: none;
+}
+
+.containerTeste .containerTesteItem.active{
+  display: inherit;
 }
