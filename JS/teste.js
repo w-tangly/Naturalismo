@@ -40,6 +40,3 @@ function showInfo(n){
     infos[n].classList.add('active');
     counters[n].classList.add('active');
 }
-
-
-
